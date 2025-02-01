@@ -35,10 +35,10 @@
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Efeito de sombra */
             margin-bottom: 20px;
             font-family: 'Playfair Display', serif;
-            font-size: 78px; /* Aumentei 30% o tamanho do título */
+            font-size: 60px; /* Tamanho menor para se adaptar melhor ao mobile */
         }
         .hero p {
-            font-size: 47px; /* Aumentei 30% o tamanho do slogan */
+            font-size: 30px; /* Slogan ajustado para mobile */
             font-family: 'Dancing Script', cursive;
         }
         .section {
@@ -46,28 +46,30 @@
             align-items: center;
             justify-content: center;
             padding: 100px 5%;
-            height: 100vh; /* Garantindo que as seções ocupem 100% da altura da tela */
+            height: auto; /* Seções terão altura adaptável */
+            flex-direction: row;
+            margin-bottom: 50px;
         }
         .section img {
-            width: 50%; /* Ajusta a largura da imagem para 50% da tela */
-            height: 100%; /* A altura da imagem é 100% da altura da seção */
+            width: 50%; /* Ajusta a largura da imagem */
+            height: 100%;
             object-fit: cover; /* Garante que a imagem ocupe bem o espaço sem distorcer */
             border-radius: 10px;
         }
         .section-text {
             width: 50%; /* O texto ocupa os 50% restantes da tela */
             text-align: center;
-            padding-left: 20px; /* Ajuste o espaçamento à esquerda */
+            padding-left: 20px;
         }
         .section h2 {
             font-family: 'Cinzel', serif;
-            font-size: 52px; /* Aumentei 30% o tamanho do título das seções */
+            font-size: 36px; /* Tamanho menor para o título das seções */
             font-weight: bold;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
         .section p {
             font-family: 'Parisienne', cursive;
-            font-size: 55px; /* Aumentei 30% o tamanho das frases */
+            font-size: 28px; /* Texto das seções com fonte reduzida */
             line-height: 1.5;
         }
         .section:nth-child(even) {
@@ -83,10 +85,10 @@
         /* Responsividade para dispositivos menores */
         @media (max-width: 1024px) {
             .hero h1 {
-                font-size: 60px; /* Ajusta o título para telas menores */
+                font-size: 50px; /* Ajusta o título para telas menores */
             }
             .hero p {
-                font-size: 36px; /* Ajusta o slogan para telas menores */
+                font-size: 28px; /* Ajusta o slogan para telas menores */
             }
             .section {
                 padding: 50px 5%; /* Ajusta o padding nas laterais */
@@ -102,23 +104,23 @@
             }
         }
 
-        /* Para telas pequenas como celulares */
+        /* Para telas ainda menores, como celulares */
         @media (max-width: 768px) {
             .hero h1 {
-                font-size: 50px; /* Ajusta ainda mais o título */
+                font-size: 40px; /* Ajusta o título para telas menores */
             }
             .hero p {
-                font-size: 32px; /* Ajusta o slogan */
+                font-size: 24px; /* Ajusta o slogan para telas menores */
             }
             .section h2 {
-                font-size: 40px; /* Ajusta o título das seções */
+                font-size: 30px; /* Ajusta o título das seções */
             }
             .section p {
-                font-size: 24px; /* Ajusta o texto das seções */
+                font-size: 22px; /* Ajusta o texto das seções */
             }
             .section {
                 flex-direction: column; /* Coloca imagem e texto em pilha */
-                padding: 40px 10%; /* Ajusta o padding para telas menores */
+                padding: 30px 10%; /* Ajusta o padding para telas menores */
             }
             .section img {
                 width: 100%; /* A imagem ocupa toda a largura da tela */
@@ -129,23 +131,23 @@
                 padding-left: 0;
             }
         }
-        
+
         /* Para telas muito pequenas, como celulares em modo retrato */
         @media (max-width: 480px) {
             .hero h1 {
-                font-size: 36px; /* Ajusta o título */
+                font-size: 32px; /* Ajusta ainda mais o título */
             }
             .hero p {
-                font-size: 24px; /* Ajusta o slogan */
+                font-size: 20px; /* Ajusta o slogan */
             }
             .section h2 {
-                font-size: 30px; /* Ajusta o título das seções */
+                font-size: 24px; /* Ajusta o título das seções */
             }
             .section p {
-                font-size: 20px; /* Ajusta o texto das seções */
+                font-size: 18px; /* Ajusta o texto das seções */
             }
             .section {
-                padding: 30px 10%; /* Ajusta o padding para telas muito pequenas */
+                padding: 20px 5%; /* Ajusta o padding para telas muito pequenas */
             }
         }
     </style>
