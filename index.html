@@ -35,10 +35,10 @@
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Efeito de sombra */
             margin-bottom: 20px;
             font-family: 'Playfair Display', serif;
-            font-size: 60px; /* Tamanho menor para se adaptar melhor ao mobile */
+            font-size: 78px; /* Aumentei 30% o tamanho do título */
         }
         .hero p {
-            font-size: 30px; /* Slogan ajustado para mobile */
+            font-size: 47px; /* Aumentei 30% o tamanho do slogan */
             font-family: 'Dancing Script', cursive;
         }
         .section {
@@ -46,30 +46,28 @@
             align-items: center;
             justify-content: center;
             padding: 100px 5%;
-            height: auto; /* Seções terão altura adaptável */
-            flex-direction: row;
-            margin-bottom: 50px;
+            height: 100vh; /* Garantindo que as seções ocupem 100% da altura da tela */
         }
         .section img {
-            width: 50%; /* Ajusta a largura da imagem */
-            height: 100%;
+            width: 50%; /* Ajusta a largura da imagem para 50% da tela */
+            height: 100%; /* A altura da imagem é 100% da altura da seção */
             object-fit: cover; /* Garante que a imagem ocupe bem o espaço sem distorcer */
             border-radius: 10px;
         }
         .section-text {
             width: 50%; /* O texto ocupa os 50% restantes da tela */
             text-align: center;
-            padding-left: 20px;
+            padding-left: 20px; /* Ajuste o espaçamento à esquerda */
         }
         .section h2 {
             font-family: 'Cinzel', serif;
-            font-size: 36px; /* Tamanho menor para o título das seções */
+            font-size: 52px; /* Aumentei 30% o tamanho do título das seções */
             font-weight: bold;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
         }
         .section p {
             font-family: 'Parisienne', cursive;
-            font-size: 28px; /* Texto das seções com fonte reduzida */
+            font-size: 55px; /* Aumentei 30% o tamanho das frases */
             line-height: 1.5;
         }
         .section:nth-child(even) {
@@ -82,72 +80,44 @@
             padding: 20px;
         }
 
-        /* Responsividade para dispositivos menores */
-        @media (max-width: 1024px) {
-            .hero h1 {
-                font-size: 50px; /* Ajusta o título para telas menores */
-            }
-            .hero p {
-                font-size: 28px; /* Ajusta o slogan para telas menores */
-            }
-            .section {
-                padding: 50px 5%; /* Ajusta o padding nas laterais */
-            }
-            .section img {
-                width: 100%; /* Imagem ocupa 100% da largura da tela */
-                height: auto; /* Altura ajustada automaticamente */
-            }
-            .section-text {
-                width: 100%; /* Texto ocupa 100% da largura da tela */
-                text-align: center; /* Centraliza o texto */
-                margin-top: 20px;
-            }
-        }
-
-        /* Para telas ainda menores, como celulares */
+        /* Responsividade */
         @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 40px; /* Ajusta o título para telas menores */
-            }
-            .hero p {
-                font-size: 24px; /* Ajusta o slogan para telas menores */
-            }
-            .section h2 {
-                font-size: 30px; /* Ajusta o título das seções */
-            }
-            .section p {
-                font-size: 22px; /* Ajusta o texto das seções */
-            }
-            .section {
-                flex-direction: column; /* Coloca imagem e texto em pilha */
-                padding: 30px 10%; /* Ajusta o padding para telas menores */
-            }
             .section img {
-                width: 100%; /* A imagem ocupa toda a largura da tela */
+                width: 80%; /* Ajusta o tamanho da imagem para 80% da largura da tela */
+                height: auto; /* Mantém a proporção da imagem */
             }
+
             .section-text {
+                width: 100%; /* Faz o texto ocupar toda a largura disponível */
                 text-align: center; /* Centraliza o texto */
-                margin-top: 20px;
-                padding-left: 0;
+            }
+
+            .section h2 {
+                font-size: 32px; /* Reduz o tamanho do título das seções */
+            }
+
+            .section p {
+                font-size: 20px; /* Ajusta o tamanho do texto para uma melhor legibilidade */
+                line-height: 1.5;
             }
         }
 
-        /* Para telas muito pequenas, como celulares em modo retrato */
         @media (max-width: 480px) {
-            .hero h1 {
-                font-size: 32px; /* Ajusta ainda mais o título */
+            .section img {
+                width: 100%; /* Faz as imagens ocuparem 100% da largura da tela */
+                height: auto; /* Ajusta a altura automaticamente */
             }
-            .hero p {
-                font-size: 20px; /* Ajusta o slogan */
+
+            .section-text {
+                padding-left: 0; /* Remove o padding à esquerda */
             }
+
             .section h2 {
-                font-size: 24px; /* Ajusta o título das seções */
+                font-size: 28px; /* Ajusta o tamanho do título das seções */
             }
+
             .section p {
-                font-size: 18px; /* Ajusta o texto das seções */
-            }
-            .section {
-                padding: 20px 5%; /* Ajusta o padding para telas muito pequenas */
+                font-size: 18px; /* Ajusta o tamanho do texto */
             }
         }
     </style>
@@ -159,9 +129,9 @@
     </div>
     
     <section id="casamento" class="section">
-        <img src="casamento.jpeg" alt="Casamento">
+        <img src="Casamento.jpeg" alt="Casamento">
         <div class="section-text">
-            <h2>Casamento</h2>
+            <h2>casamento</h2>
             <p>O casamento é o início de uma nova jornada. Registre esse dia único e guarde para sempre a emoção desse momento especial.</p>
         </div>
     </section>
