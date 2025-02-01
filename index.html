@@ -6,6 +6,8 @@
     <title>BruCosta Fotografia</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Dancing+Script&family=Cinzel&family=Parisienne&display=swap" rel="stylesheet">
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         * {
             margin: 0;
@@ -13,12 +15,12 @@
             box-sizing: border-box;
             font-family: 'Arial', sans-serif;
         }
-    
+
         body {
             background-color: #fff;
             color: #333;
         }
-    
+
         .hero {
             width: 100%;
             height: 100vh;
@@ -30,7 +32,7 @@
             color: #fff;
             text-align: center;
         }
-    
+
         .hero h1 {
             border: 10px solid #fff;
             padding: 20px;
@@ -40,12 +42,12 @@
             font-family: 'Playfair Display', serif;
             font-size: 78px;
         }
-    
+
         .hero p {
             font-size: 47px;
             font-family: 'Dancing Script', cursive;
         }
-    
+
         .section {
             display: flex;
             align-items: center;
@@ -53,100 +55,134 @@
             padding: 100px 5%;
             height: 100vh;
         }
-    
+
         .section img {
             width: 50%;
             height: 100%;
             object-fit: cover;
             border-radius: 10px;
         }
-    
+
         .section-text {
             width: 50%;
             text-align: center;
             padding-left: 20px;
         }
-    
+
         .section h2 {
             font-family: 'Cinzel', serif;
             font-size: 52px;
             font-weight: bold;
             margin-bottom: 20px;
         }
-    
+
         .section p {
             font-family: 'Parisienne', cursive;
             font-size: 55px;
             line-height: 1.5;
         }
-    
+
         .section:nth-child(even) {
             flex-direction: row-reverse;
         }
-    
+
         footer {
             background: #000;
             color: #fff;
             text-align: center;
             padding: 20px;
         }
-    
+
         /* Ajustes específicos para mobile */
         @media (max-width: 768px) {
             .hero h1 {
                 font-size: 60px;
             }
-    
+
             .hero p {
                 font-size: 30px;
             }
-    
+
             .section img {
                 width: 80%; /* Reduzindo o tamanho das imagens em telas menores */
                 height: auto; /* Ajustando a altura para manter a proporção */
             }
-    
+
             .section-text {
                 width: 100%; /* Ajuste para ocupar 100% do espaço */
                 text-align: center; /* Centralizando o texto */
             }
-    
+
             .section h2 {
                 font-size: 32px;
             }
-    
+
             .section p {
                 font-size: 20px;
             }
         }
-    
+
         /* Ajustes para dispositivos móveis muito pequenos */
         @media (max-width: 480px) {
             .hero h1 {
                 font-size: 40px;
             }
-    
+
             .hero p {
                 font-size: 25px;
             }
-    
+
             .section img {
                 width: 100%; /* Imagem ocupa 100% da largura */
                 height: auto;
             }
-    
+
             .section-text {
                 width: 100%;
                 padding-left: 0;
             }
-    
+
             .section h2 {
                 font-size: 28px;
             }
-    
+
             .section p {
                 font-size: 16px;
             }
+        }
+
+        /* Estilo dos botões no final da página */
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 40px;
+            padding: 20px;
+        }
+
+        .button {
+            background-color: #333;
+            color: #fff;
+            font-size: 18px;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            transition: background-color 0.3s;
+        }
+
+        /* Hover para os botões */
+        .button:hover {
+            background-color: #444;
+        }
+
+        .button i {
+            font-size: 20px;
         }
     </style>
 </head>
@@ -155,7 +191,7 @@
         <h1>BruCosta Fotografia</h1>
         <p>Capturando momentos, criando memórias.</p> <!-- Slogan -->
     </div>
-    
+
     <section id="casamento" class="section">
         <img src="casamento.jpeg" alt="Casamento">
         <div class="section-text">
@@ -171,7 +207,7 @@
             <p>O Pré-Wedding é a chance de capturar o brilho da espera, a emoção do amor antes do 'sim'. Momentos únicos que contarão a história do início de uma nova jornada juntos.</p>
         </div>
     </section>
-    
+
     <section id="gestantes" class="section">
         <img src="Gestante.jpeg" alt="Gestantes">
         <div class="section-text">
@@ -179,7 +215,7 @@
             <p>A espera de um filho é um dos momentos mais mágicos da vida. Registre essa fase incrível com imagens que eternizam esse amor.</p>
         </div>
     </section>
-    
+
     <section id="familia" class="section">
         <img src="Familia.jpeg" alt="Família">
         <div class="section-text">
@@ -187,16 +223,30 @@
             <p>Os momentos em família são os mais preciosos. Guarde para sempre os sorrisos, abraços e a conexão entre aqueles que mais ama.</p>
         </div>
     </section>
-    
+
+    <!-- Botões no final da página -->
+    <div class="button-container">
+        <!-- Orçamento -->
+        <a href="https://forms.gle/seulinkdofomulario" target="_blank" class="button">
+            <i class="fas fa-file-alt"></i> Orçamento
+        </a>
+        </a>
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/brucostafotografia/" target="_blank" class="button">
+            <i class="fab fa-instagram"></i> Instagram
+        </a>
+    </div>
+
     <footer>
         <p>&copy; 2025 BruCosta Fotografia - Todos os direitos reservados.</p>
     </footer>
+
     <script>
         // Função para verificar se o usuário está em um dispositivo móvel
         function isMobile() {
             return /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
         }
-    
+
         // Função para ajustar o conteúdo dependendo do dispositivo
         function adjustForDevice() {
             if (isMobile()) {
@@ -217,7 +267,7 @@
                 });
             }
         }
-    
+
         // Chama a função de ajuste assim que o conteúdo for carregado
         window.onload = function() {
             adjustForDevice();
