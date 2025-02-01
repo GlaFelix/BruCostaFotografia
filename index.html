@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BruCosta Fotografia</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Dancing+Script&family=Cinzel&family=Parisienne&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        body {
+            background-color: #fff;
+            color: #333;
+        }
+        .hero {
+            width: 100%;
+            height: 100vh;
+            background: url('Abertura.jpeg') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: #fff;
+            text-align: center;
+        }
+        .hero h1 {
+            border: 10px solid #fff; /* Moldura */
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Efeito de sombra */
+            margin-bottom: 20px;
+            font-family: 'Playfair Display', serif;
+            font-size: 78px; /* Aumentei 30% o tamanho do título */
+        }
+        .hero p {
+            font-size: 47px; /* Aumentei 30% o tamanho do slogan */
+            font-family: 'Dancing Script', cursive;
+        }
+        .section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 100px 5%;
+            height: 100vh; /* Garantindo que as seções ocupem 100% da altura da tela */
+        }
+        .section img {
+            width: 50%; /* Ajusta a largura da imagem para 50% da tela */
+            height: 100%; /* A altura da imagem é 100% da altura da seção */
+            object-fit: cover; /* Garante que a imagem ocupe bem o espaço sem distorcer */
+            border-radius: 10px;
+        }
+        .section-text {
+            width: 50%; /* O texto ocupa os 50% restantes da tela */
+            text-align: center;
+            padding-left: 20px; /* Ajuste o espaçamento à esquerda */
+        }
+        .section h2 {
+            font-family: 'Cinzel', serif;
+            font-size: 52px; /* Aumentei 30% o tamanho do título das seções */
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .section p {
+            font-family: 'Parisienne', cursive;
+            font-size: 55px; /* Aumentei 30% o tamanho das frases */
+            line-height: 1.5;
+        }
+        .section:nth-child(even) {
+            flex-direction: row-reverse; /* Alterna a ordem para as seções pares */
+        }
+        footer {
+            background: #000;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>BruCosta Fotografia</h1>
+        <p>Capturando momentos, criando memórias.</p> <!-- Slogan -->
+    </div>
+    
+    <section id="casamento" class="section">
+        <img src="Casamento.jpeg" alt="Casamento">
+        <div class="section-text">
+            <h2>Casamento</h2>
+            <p>O casamento é o início de uma nova jornada. Registre esse dia único e guarde para sempre a emoção desse momento especial.</p>
+        </div>
+    </section>
+
+    <section id="Pré-Wedding" class="section">
+        <img src="pre.jpeg" alt="Pré-Wedding">
+        <div class="section-text">
+            <h2>Pré-Wedding</h2>
+            <p>O Pré-Wedding é a chance de capturar o brilho da espera, a emoção do amor antes do 'sim'. Momentos únicos que contarão a história do início de uma nova jornada juntos.</p>
+        </div>
+    </section>
+    
+    <section id="gestantes" class="section">
+        <img src="Gestante.jpeg" alt="Gestantes">
+        <div class="section-text">
+            <h2>Gestantes</h2>
+            <p>A espera de um filho é um dos momentos mais mágicos da vida. Registre essa fase incrível com imagens que eternizam esse amor.</p>
+        </div>
+    </section>
+    
+    <section id="familia" class="section">
+        <img src="Familia.jpeg" alt="Família">
+        <div class="section-text">
+            <h2>Família</h2>
+            <p>Os momentos em família são os mais preciosos. Guarde para sempre os sorrisos, abraços e a conexão entre aqueles que mais ama.</p>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 BruCosta Fotografia - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
